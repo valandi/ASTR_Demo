@@ -1,0 +1,16 @@
+<job>
+	<load>configurations.xml</load>
+		<batch name="Autotraders_ASTR_batch">
+		<test appname="Autotraders_ASTR_app" testname="Autotraders_ASTR_test">
+			<configuration> 
+				<applitools>applitoolsConf.xml</applitools>
+				<driver useChromeOptions="autotrader_config">chrome</driver>
+			</configuration>
+			<execute>
+				<action type="navigate">https://www.autotrader.com/</action>
+				<action type="sleep">25000</action>
+				<action type="checkwindow">Home Page</action>
+			</execute>
+		</test>
+	</batch>
+</job>

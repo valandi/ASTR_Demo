@@ -1,0 +1,14 @@
+<definitions>
+    <ChromeOptions name="autotrader_config">
+        <argument>--disable-blink-features=AutomationControlled</argument>
+        <argument>--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"</argument>
+    </ChromeOptions>
+    <configuration name="grid">
+        <applitools>applitoolsConf.xml</applitools>
+        <driver>chrome</driver>
+        <viewport width = "1200" height = "800" ></viewport>
+        <visualGrid>
+            <browser type="chrome" width="1200" height="800" />
+        </visualGrid>
+    </configuration>
+</definitions>
