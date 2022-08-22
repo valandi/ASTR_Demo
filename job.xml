@@ -6,7 +6,7 @@
 				<applitools>applitoolsConf.xml</applitools>
 				<driver location="C:\Users\Valan\Desktop\chromedriver.exe" useChromeOptions="autotrader_config">chrome</driver>
 				<viewport width = "1200" height = "800" ></viewport>
-				<visualGrid disableBrowserFetching="true">
+				<visualGrid disableBrowserFetching="false">
 					<browser type="chrome" width="1200" height="800" /> 
 				</visualGrid>
 			</configuration>
