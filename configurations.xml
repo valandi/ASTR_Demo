@@ -2,7 +2,16 @@
     <ChromeOptions name="autotrader_config">
         <argument>--disable-blink-features=AutomationControlled</argument>
         <argument>--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"</argument>
+        <argument>--no-sandbox</argument>
     </ChromeOptions>
+    <scrollPageDown> 
+        <action type="executejs">window.scrollBy(0, 1000);</action>
+		<action type="sleep">2000</action>
+    </scrollPageDown>
+    <scrollPageUp> 
+        <action type="executejs">window.scrollBy(0, -1000);</action>
+		<action type="sleep">2000</action>
+    </scrollPageUp>
     <configuration name="grid">
         <applitools>applitoolsConf.xml</applitools>
         <driver>chrome</driver>

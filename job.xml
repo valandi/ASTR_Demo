@@ -4,11 +4,25 @@
 		<test appname="Autotraders_ASTR_app" testname="Autotraders_ASTR_test">
 			<configuration> 
 				<applitools>applitoolsConf.xml</applitools>
-				<driver useChromeOptions="autotrader_config">chrome</driver>
+				<driver location="C:\Users\Valan\Desktop\chromedriver.exe" useChromeOptions="autotrader_config">chrome</driver>
+				<viewport width = "1200" height = "800" ></viewport>
+				<visualGrid disableBrowserFetching="true">
+					<browser type="chrome" width="1200" height="800" /> 
+				</visualGrid>
 			</configuration>
 			<execute>
 				<action type="navigate">https://www.autotrader.com/</action>
-				<action type="sleep">25000</action>
+				<action type="sleep">15000</action>
+				<scrollPageDown />
+				<scrollPageDown />
+				<scrollPageDown />
+				<scrollPageDown />
+				<scrollPageDown />
+				<scrollPageUp />
+				<scrollPageUp />
+				<scrollPageUp />
+				<scrollPageUp />
+				<scrollPageUp />
 				<action type="checkwindow">Home Page</action>
 			</execute>
 		</test>
